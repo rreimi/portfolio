@@ -78,8 +78,11 @@
                 <h4>The Reason</h4>
 
                 <p class="paragraph">
-                    A reflexion about creating the portfolio.
+                    If you ask me for the main reason of doing this work, I could easily answer that it was a college task which was required to be done. I saw it that way the first time, but when I sat and started to think about how to do it I said to me: If you are going to spend your time doing this, do it well.
                     <!-- TODO Reflexion here -->
+                </p>
+                <p class="paragraph">
+                    I am trying to think in that way about everything I am doing since I came to Dublin so I used this task to learn a new technology and to try to be creative while learning english. I hope you enjoy this work as much as I did doing it.
                 </p>
             </div>
 
@@ -319,7 +322,7 @@
             <div class="page-content">
                 <h3>Maru</h3>
                 <p class="paragraph first">
-                    If Mare were in my family, definitely she would be my little sister.
+                    If Maru were in my family, definitely she would be my little sister.
                 </p>
 
                 <p>
@@ -420,6 +423,19 @@
             shadows: false
         });
 
+
+        if (document.location.hash != undefined) {
+            var page = document.location.hash;
+            switch (page) {
+                case '#maru':
+                    jQuery('#mybook').booklet(28);
+                break;
+                case '#najla':
+                    jQuery('#mybook').booklet(32);
+                break;
+            }
+        }
+
         jQuery('.pp_arrow_next').bind('click', function(){
             jQuery('#mybook').booklet("next");
         })
@@ -471,6 +487,8 @@
             rel: 'dublin-gallery',
             maxHeight: '95%'
         });
+
+        //Anchor validation
     });
 </script>
 </body>
